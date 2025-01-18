@@ -23,7 +23,7 @@ function NoteList({ notes, onDelete, onArchived }) {
 }
 
 NoteList.propTypes = {
-  notes: PropTypes.arrayOf(PropTypes.object),
+  notes: PropTypes.arrayOf(PropTypes.shape),
   onDelete: PropTypes.func,
   onArchived: PropTypes.func,
 };
