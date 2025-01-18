@@ -4,11 +4,21 @@ import { getNote } from '../utils/local-data';
 import { FaRegFileAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
+import NotFoundPage from './NotFound';
 
 function NoteDetail() {
   const { id } = useParams(); // Mengambil parameter id dari URL
   const note = getNote(id); // Mengambil detail catatan berdasarkan id
-  const { title, body, createdAt } = note; //destructuring
+
+  if (!note) {
+    return (
+      <>
+        <NotFoundPage />
+      </>
+    );
+  }
+
+  const { title, body, createdAt } = note; // Destructuring jika catatan ditemukan
 
   return (
     <>
