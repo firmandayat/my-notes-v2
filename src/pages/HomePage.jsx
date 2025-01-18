@@ -1,10 +1,10 @@
-import React from "react";
-import NoteList from "../components/NoteList";
-import { getAllNotes, addNote, deleteNote } from "../utils/local-data";
-import { FaSearch, FaPlusCircle, FaRegFileAlt } from "react-icons/fa";
-import Footer from "../components/Footer";
-import { Link, useSearchParams } from "react-router-dom";
-import PropTypes from "prop-types";
+import React from 'react';
+import NoteList from '../components/NoteList';
+import { getAllNotes, addNote, deleteNote } from '../utils/local-data';
+import { FaSearch, FaPlusCircle, FaRegFileAlt } from 'react-icons/fa';
+import Footer from '../components/Footer';
+import { Link, useSearchParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
 function SearchPageWrapper() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -19,7 +19,7 @@ class NoteApp extends React.Component {
     super(props);
     this.state = {
       notes: getAllNotes(),
-      searchNote: props.searchParams.get("title") || "",
+      searchNote: props.searchParams.get('title') || '',
     };
     this.onDeleteHandler = this.onDeleteHandler.bind(this);
     this.onAddNoteHandler = this.onAddNoteHandler.bind(this);
@@ -28,16 +28,16 @@ class NoteApp extends React.Component {
   }
 
   componentDidMount() {
-    window.ScrollReveal().reveal(".reveal", {
+    window.ScrollReveal().reveal('.reveal', {
       duration: 1000,
-      distance: "50px",
-      origin: "bottom",
+      distance: '50px',
+      origin: 'bottom',
       reset: true,
     });
-    window.ScrollReveal().reveal(".reveal1", {
+    window.ScrollReveal().reveal('.reveal1', {
       duration: 2000,
-      distance: "100px",
-      origin: "bottom",
+      distance: '100px',
+      origin: 'bottom',
       reset: true,
     });
   }

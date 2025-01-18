@@ -1,7 +1,7 @@
-import React from "react";
-import NoteItemBody from "./NoteItemBody";
-import { showFormattedDate } from "../utils/index";
-import PropTypes from "prop-types";
+import React from 'react';
+import NoteItemBody from './NoteItemBody';
+import { showFormattedDate } from '../utils/index';
+import PropTypes from 'prop-types';
 
 function NoteItem({
   title,

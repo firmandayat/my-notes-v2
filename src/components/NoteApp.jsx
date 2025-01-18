@@ -1,10 +1,10 @@
- 
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import HomePage from "../pages/HomePage";
-import AddNote from "../pages/AddNote";
-import DetailNote from "../pages/DetailNote";
-import NotFoundPage from "../pages/NotFound";
+
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import HomePage from '../pages/HomePage';
+import AddNote from '../pages/AddNote';
+import DetailNote from '../pages/DetailNote';
+import NotFoundPage from '../pages/NotFound';
 
 function NoteApp() {
   return (

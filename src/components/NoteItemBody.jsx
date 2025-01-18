@@ -1,8 +1,8 @@
-import React from "react";
-import DeleteButton from "./DeleteButton";
-import ArchivedButton from "./ArchivedButton";
-import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import React from 'react';
+import DeleteButton from './DeleteButton';
+import ArchivedButton from './ArchivedButton';
+import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function NoteItemBody({
   title,

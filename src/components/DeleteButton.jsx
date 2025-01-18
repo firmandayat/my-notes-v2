@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
-import React from "react";
-import { FaTrash } from "react-icons/fa";
+import PropTypes from 'prop-types';
+import React from 'react';
+import { FaTrash } from 'react-icons/fa';
 
 function DeleteButton({ id, onDelete }) {
   return (
@@ -14,6 +14,6 @@ function DeleteButton({ id, onDelete }) {
 DeleteButton.propTypes = {
   id: PropTypes.string,
   onDelete: PropTypes.func
-}
+};
 
 export default DeleteButton;

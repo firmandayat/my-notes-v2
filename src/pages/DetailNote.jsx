@@ -1,9 +1,9 @@
-import React from "react";
-import { useParams } from "react-router-dom";
-import { getNote } from "../utils/local-data";
-import { FaRegFileAlt } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import { getNote } from '../utils/local-data';
+import { FaRegFileAlt } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function NoteDetail() {
   const { id } = useParams(); // Mengambil parameter id dari URL

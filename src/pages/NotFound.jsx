@@ -1,7 +1,7 @@
-import React from "react";
-import { FaRegFileAlt, FaExclamationCircle } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
+import React from 'react';
+import { FaRegFileAlt, FaExclamationCircle } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer';
 
 function NotFoundPage() {
   return (
