@@ -2,8 +2,7 @@ import React from 'react';
 import { addNote } from '../utils/local-data';
 import NoteInput from '../components/NoteInput';
 import { FaRegFileAlt } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import PropTypes from 'prop-types';
 
